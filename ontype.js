@@ -59,7 +59,7 @@ function rewriteBeauty() {
     let newInnerHTML = '';
 
     for (const x of show.innerHTML) {
-        if (!+x) newInnerHTML += ' ' + x + ' ';
+        if (!+x && x !== ' ') newInnerHTML += ' ' + x + ' ';
         else newInnerHTML += x;
     }
 
